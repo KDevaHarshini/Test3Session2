@@ -26,8 +26,8 @@ Breakpoint 1, main () at p1final.c:31
 (gdb) n
 33    input(&num1,&den1,&num2,&den2);
 (gdb) s
-input (num1=0x7ffecc4c38c0, den1=0x7ffecc4c38c4, num2=0x7ffecc4c38c8, 
-    den2=0x7ffecc4c38cc) at p1final.c:4
+input (num1=0x7ffca04a3f50, den1=0x7ffca04a3f54, num2=0x7ffca04a3f58, 
+    den2=0x7ffca04a3f5c) at p1final.c:4
 4     printf("Enter four numbers\n");
 (gdb) n
 Enter four numbers
@@ -37,18 +37,18 @@ Enter four numbers
 1 2
 6   }
 (gdb) p num1
-$1 = (int *) 0x7ffecc4c38c0
+$1 = (int *) 0x7ffca04a3f50
 (gdb) p den1
-$2 = (int *) 0x7ffecc4c38c4
+$2 = (int *) 0x7ffca04a3f54
 (gdb) p num2
-$3 = (int *) 0x7ffecc4c38c8
+$3 = (int *) 0x7ffca04a3f58
 (gdb) p den2
-$4 = (int *) 0x7ffecc4c38cc
+$4 = (int *) 0x7ffca04a3f5c
 (gdb) n
 main () at p1final.c:34
 34    add(num1,den1,num2,den2,&num3,&den3);
 (gdb) s
-add (num1=1, den1=4, num2=1, den2=2, num3=0x7ffecc4c38d0, den3=0x7ffecc4c38d4)
+add (num1=1, den1=4, num2=1, den2=2, num3=0x7ffca04a3f60, den3=0x7ffca04a3f64)
     at p1final.c:20
 20    *num3=(num1*den2)+(num2*den1);
 (gdb) s
@@ -78,5 +78,5 @@ main () at p1final.c:36
 (gdb) n
 37  }(gdb) c
 Continuing.
-[Inferior 1 (process 57) exited normally]
+[Inferior 1 (process 869) exited normally]
 (gdb) 

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 void input(int *num1, int *den1, int *num2, int *den2)
 {
   printf("Enter four numbers\n");
@@ -23,7 +23,7 @@ void add(int num1,int den1,int num2,int den2,int *num3,int *den3)
   *num3/=g;
   *den3/=g;
 }
-void output(int num1,int den1,int num2,int den2,int num3,int den3)
+void output(int num1,int den1, int num2,int den2,int num3,int den3)
 {
   printf("%d/%d + %d/%d = %d/%d\n",num1,den1,num2,den2,num3,den3);
 }
